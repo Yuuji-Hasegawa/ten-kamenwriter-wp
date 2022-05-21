@@ -1,0 +1,15 @@
+/.htaccess
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+/wp-admin/*
+/wp-content/*
+/wp-includes/*
+!/wp-content/themes
+/wp-content/themes/*
+!/wp-content/themes/ten-kamenwriter/
+!/wp-content/themes/ten-kamenwriter/**/*
+!/wp-content/themes/ten-kamenwriter-dev/
+!/wp-content/themes/ten-kamenwriter-dev/**/*
