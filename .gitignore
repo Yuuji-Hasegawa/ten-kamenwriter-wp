@@ -13,3 +13,5 @@
 !/wp-content/themes/ten-kamenwriter/**/*
 !/wp-content/themes/ten-kamenwriter-dev/
 !/wp-content/themes/ten-kamenwriter-dev/**/*
+/wp-content/themes/ten-kamenwriter-dev/node_modules
+/wp-content/themes/ten-kamenwriter-dev/pnpm-loack.yaml

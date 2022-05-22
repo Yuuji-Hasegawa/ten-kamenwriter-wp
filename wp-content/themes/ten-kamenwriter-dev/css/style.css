@@ -1,32 +1,33 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic Medium");
+  font-family: 'Original Yu Gothic';
+  src: local('Yu Gothic Medium');
   font-weight: 100;
 }
 @font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic Medium");
+  font-family: 'Original Yu Gothic';
+  src: local('Yu Gothic Medium');
   font-weight: 200;
 }
 @font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic Medium");
+  font-family: 'Original Yu Gothic';
+  src: local('Yu Gothic Medium');
   font-weight: 300;
 }
 @font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic Medium");
+  font-family: 'Original Yu Gothic';
+  src: local('Yu Gothic Medium');
   font-weight: 400;
 }
 @font-face {
-  font-family: "Original Yu Gothic";
-  src: local("Yu Gothic Bold");
+  font-family: 'Original Yu Gothic';
+  src: local('Yu Gothic Bold');
   font-weight: bold;
 }
 @font-face {
-  font-family: "FuturaPTWebMedium";
-  src: url("../fonts/Futura%20PT_Medium.woff2") format("woff2"), url("../fonts/Futura%20PT_Medium.woff") format("woff"), url("../fonts/Futura%20PT_Medium.ttf") format("truetype");
+  font-family: 'FuturaPTWebMedium';
+  src: url('../fonts/Futura%20PT_Medium.woff2') format('woff2'), url('../fonts/Futura%20PT_Medium.woff') format('woff'),
+    url('../fonts/Futura%20PT_Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -86,8 +87,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: initial;
-  -webkit-font-feature-settings: "pkna";
-  font-family: "FuturaPTWebMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans CJK JP", "Original Yu Gothic", "Yu Gothic", sans-serif;
+  -webkit-font-feature-settings: 'pkna';
+  font-family: 'FuturaPTWebMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Hiragino Sans',
+    'Noto Sans CJK JP', 'Original Yu Gothic', 'Yu Gothic', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   background-color: var(--c-bg);
@@ -127,7 +129,8 @@ a {
 a:visited {
   color: var(--c-dimmed);
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #4e9788;
   opacity: 0.7;
 }
@@ -287,7 +290,7 @@ a:hover, a:focus {
   padding-left: 1rem;
 }
 .o-stack\:annouce > li:before {
-  content: "※";
+  content: '※';
   position: absolute;
   left: 0;
 }
@@ -445,8 +448,9 @@ a:hover, a:focus {
   height: 1px;
   background: var(--c-txt);
 }
-.c-menu-btn__bars::before, .c-menu-btn__bars::after {
-  content: "";
+.c-menu-btn__bars::before,
+.c-menu-btn__bars::after {
+  content: '';
   height: 1px;
   background: inherit;
   width: 100%;
@@ -561,7 +565,10 @@ body.fixed {
   display: block;
   font-weight: 700;
 }
-.c-link\:nav:hover, .c-link\:nav:focus, .c-link\:cat:hover, .c-link\:cat:focus {
+.c-link\:nav:hover,
+.c-link\:nav:focus,
+.c-link\:cat:hover,
+.c-link\:cat:focus {
   background: var(--c-overlay);
   opacity: 1;
 }
@@ -574,7 +581,8 @@ body.fixed {
   padding: 1rem;
   font-size: 1.125rem;
 }
-.c-link\:fnav, .c-link\:bottom-link {
+.c-link\:fnav,
+.c-link\:bottom-link {
   color: inherit;
 }
 .c-link\:bottom-link {
@@ -592,7 +600,7 @@ body.fixed {
   display: inline-flex;
 }
 .c-link\:tag:before {
-  content: "#";
+  content: '#';
   margin-right: 0.3541242822rem;
 }
 .c-link\:catSingle {
@@ -616,7 +624,8 @@ body.fixed {
   display: inline-block;
   text-decoration: underline;
 }
-.c-link\:inline:hover, .c-link\:inline:focus {
+.c-link\:inline:hover,
+.c-link\:inline:focus {
   text-decoration: none;
 }
 .c-link\:bottomCat {
@@ -737,7 +746,7 @@ body.fixed {
 }
 .c-hero:after {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: var(--c-bg);
@@ -811,7 +820,8 @@ body.fixed {
   outline: none;
   color: var(--c-txt);
 }
-.c-btn:hover, .c-btn:focus {
+.c-btn:hover,
+.c-btn:focus {
   background: #123933;
   color: #4e9788;
 }
@@ -864,11 +874,11 @@ body.fixed {
   position: relative;
 }
 .c-bread-list__item:not(:last-of-type)::after {
-  content: "";
+  content: '';
   border-color: var(--c-separator);
   border-style: solid;
   border-width: 0 1px 1px 0;
-  content: "";
+  content: '';
   height: 7px;
   position: absolute;
   right: -6px;
@@ -938,7 +948,7 @@ body.fixed {
   counter-increment: section;
 }
 .c-section__item::before {
-  content: counter(section) ".";
+  content: counter(section) '.';
 }
 
 .c-sub-section {
@@ -948,7 +958,7 @@ body.fixed {
   counter-increment: subsection;
 }
 .c-sub-section__item::before {
-  content: "(" counter(subsection) ")";
+  content: '(' counter(subsection) ')';
 }
 
 .c-section__item,
@@ -1022,7 +1032,8 @@ body.fixed {
 .c-table\:term {
   margin-top: 1rem;
 }
-.c-table__title, .c-table__content {
+.c-table__title,
+.c-table__content {
   padding: 1rem;
   outline: 1px transparent;
   outline-offset: -1px;
@@ -1078,7 +1089,7 @@ body.fixed {
   background: #2c6c60;
 }
 .c-checkbtn:checked::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0.875rem;
   height: 0.4375rem;

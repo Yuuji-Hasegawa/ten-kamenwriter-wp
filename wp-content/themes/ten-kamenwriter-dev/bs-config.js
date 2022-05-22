@@ -12,13 +12,7 @@
  |
  */
 module.exports = {
-    "files": [
-        "**/*.html",
-        "src/scss/**/*.scss",
-        "src/js/**/*.mjs"
-    ],
-    "server": [
-        "./"
-    ],
-    "open": false,
+  files: ['**/*.html', 'src/scss/**/*.scss', 'src/js/**/*.mjs'],
+  server: ['./'],
+  open: false,
 };
