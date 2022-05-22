@@ -1,0 +1,45 @@
+@use '../settings' as setting;
+.c-table {
+  display: flex;
+  flex-wrap: wrap;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: var(--c-border);
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+  }
+  &\:term-inner {
+    margin: 0.5rem 0 1rem -2rem;
+  }
+  &\:term {
+    margin-top: 1rem;
+  }
+  &__title,
+  &__content {
+    padding: setting.spaces(base);
+    outline: 1px transparent;
+    outline-offset: -1px;
+  }
+  &__title {
+    align-items: flex-start;
+    display: flex;
+    font-weight: setting.fontweight(m);
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: var(--c-border);
+    max-width: max(calc(650px - 100vw) * 999, 240px);
+    background: var(--c-overlay);
+    align-items: center;
+    &\:count {
+      text-indent: -1.5rem;
+      padding-left: 2.4rem;
+    }
+  }
+  &__content {
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: var(--c-border);
+    max-width: max(calc((650px - 100vw) * 999), calc(100% - 240px));
+  }
+}

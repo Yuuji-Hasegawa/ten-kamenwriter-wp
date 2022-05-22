@@ -1,0 +1,57 @@
+@use '../settings' as setting;
+.c-hero {
+  position: relative;
+  margin-bottom: setting.spaces(l);
+  padding: setting.spaces(l) setting.spaces(base);
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--c-bg);
+    opacity: setting.animes(opacity);
+    left: 0;
+    top: 0;
+  }
+  &_bg {
+    width: clamp(69px, (calc(540px - 100vw) * -999), 140px);
+    margin: 0 auto;
+  }
+  &_front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+  &_main {
+    font-weight: setting.fontweight(b);
+    line-height: setting.lineheight(heading);
+    text-align: center;
+    margin-top: auto;
+    font-size: clamp(
+      calc(setting.fontsize(s) * 2.8),
+      calc((10vw - setting.fontsize(s) * 3) * 999),
+      setting.fontsize(xl)
+    );
+    font-style: italic;
+    margin-left: setting.spaces(base);
+    margin-right: setting.spaces(base);
+    &\:page {
+      font-style: normal;
+      margin-top: inherit;
+    }
+  }
+  &_tagline {
+    margin-top: setting.fontsize(m);
+    font-size: setting.fontsize(l);
+    font-weight: setting.fontweight(m);
+    text-align: center;
+    line-height: setting.lineheight(heading);
+  }
+}

@@ -1,0 +1,74 @@
+@use '../settings' as setting;
+@use '../tools' as tool;
+
+:root {
+  @each $key, $name in setting.$dark-colors {
+    --c-#{$key}: #{($name)};
+  }
+  --accent: #c82e2e;
+  @include tool.darkmode() {
+    --accent: #ff5a5a;
+  }
+}
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+body {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: initial;
+  -webkit-font-feature-settings: 'pkna';
+  font-family: setting.$font-family;
+  font-size: setting.fontsize(s);
+  line-height: setting.lineheight(reset);
+  background-color: var(--c-bg);
+  color: var(--c-txt);
+}
+ol,
+ul {
+  list-style: none;
+}
+p:not(:last-of-type) {
+  margin-block-end: setting.spaces(m);
+}
+
+b,
+strong {
+  font-weight: setting.fontweight(b);
+}
+
+small {
+  font-size: setting.fontsize(xs);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a {
+  color: setting.brandcolor(base);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all setting.animes(duration) setting.animes(timing);
+  &:visited {
+    color: var(--c-dimmed);
+  }
+  &:hover,
+  &:focus {
+    color: setting.brandcolor(light);
+    opacity: setting.animes(opacity);
+  }
+}

@@ -1,0 +1,31 @@
+@use '../settings' as setting;
+.c-entry {
+  max-width: 40em;
+  margin: 0 auto;
+  line-height: setting.lineheight(body);
+}
+.c-insert-img {
+  margin: setting.spaces(base) 0;
+}
+.c-redume-marker {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform setting.animes(duration) setting.animes(timing);
+  &\:is-open {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+.c-author-pict {
+  width: 100px;
+  margin: 0 auto;
+}
+.c-author-name {
+  font-weight: setting.fontweight(b);
+  font-size: setting.fontsize(m);
+  display: table;
+  margin: auto;
+  width: min(calc((100vw - 540px) * 999), 100%);
+  min-width: max-content;
+}

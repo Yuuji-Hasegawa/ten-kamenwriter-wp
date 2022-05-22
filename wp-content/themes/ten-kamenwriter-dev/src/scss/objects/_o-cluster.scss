@@ -1,0 +1,31 @@
+@use '../settings' as setting;
+.o-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: setting.spaces(base);
+  &\:header {
+    align-items: center;
+    gap: setting.spaces(2xs);
+  }
+  &\:footer {
+    margin-bottom: setting.spaces(m);
+    gap: setting.spaces(xs);
+  }
+  &\:bottom-address {
+    justify-content: center;
+    gap: setting.spaces(m);
+  }
+  &\:related {
+    align-items: center;
+    justify-content: center;
+  }
+  &\:newsSingle {
+    margin-bottom: setting.spaces(base);
+  }
+  &\:sns {
+    margin-top: setting.spaces(xs);
+  }
+  &\:center {
+    justify-content: center;
+  }
+}

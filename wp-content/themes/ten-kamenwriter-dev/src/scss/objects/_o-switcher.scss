@@ -1,0 +1,39 @@
+@use '../settings' as setting;
+.o-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  &\:author {
+    gap: setting.spaces(s);
+    align-items: flex-start;
+    > * + * {
+      flex-grow: 1;
+      flex-basis: calc((540px - 100vw) * 999);
+    }
+  }
+  &\:media {
+    gap: setting.spaces(base);
+    align-items: flex-start;
+    &\:r {
+      flex-direction: row-reverse;
+    }
+    > * {
+      flex-shrink: 0;
+      width: 100%;
+    }
+    > .c-media-pict {
+      max-width: max(calc(540px - 100vw) * 999, 33%);
+    }
+    > .c-media-body {
+      max-width: max(calc((540px - 100vw) * 999), calc(100% - 33% - setting.spaces(base)));
+    }
+  }
+  &\:oneThird {
+    gap: setting.spaces(l);
+    justify-content: center;
+    > * {
+      flex-shrink: 0;
+      width: 100%;
+      max-width: max(calc(880px - 100vw) * 999, calc(33% - setting.spaces(l)));
+    }
+  }
+}

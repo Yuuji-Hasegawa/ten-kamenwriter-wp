@@ -1,0 +1,35 @@
+@use '../settings' as setting;
+.o-grid {
+  display: grid;
+  &\:blogList {
+    gap: calc(setting.spaces(base) * 3) setting.spaces(base);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-bottom: calc(setting.spaces(base) * 3);
+  }
+  &\:sitemap {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: calc(setting.spaces(base) * 2) setting.spaces(base);
+    margin: 0 auto setting.spaces(l);
+    max-width: 70em;
+  }
+  &\:accept {
+    gap: setting.spaces(2xs);
+    grid-template-columns: max-content max-content auto;
+    margin: setting.spaces(base) 0;
+    cursor: pointer;
+    align-items: center;
+  }
+  &\:pagination {
+    gap: setting.spaces(xs);
+    grid-template: auto / repeat(auto-fit, minmax(min((calc(375px - 100vw) * 999), 2em), auto));
+    justify-content: center;
+  }
+  &\:headAuthor {
+    grid-template-columns: 50px 1fr;
+    width: fit-content;
+    gap: setting.spaces(2xs);
+    font-size: setting.fontsize(xs);
+    line-height: setting.lineheight(heading);
+    margin-bottom: setting.spaces(m);
+  }
+}

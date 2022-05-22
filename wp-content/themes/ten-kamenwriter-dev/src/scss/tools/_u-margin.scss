@@ -1,0 +1,10 @@
+@use '../settings' as setting;
+.u-mb-s {
+  margin-bottom: setting.spaces(s);
+}
+.u-mb-m {
+  margin-bottom: setting.spaces(m);
+}
+.u-mb-l {
+  margin-bottom: setting.spaces(l);
+}

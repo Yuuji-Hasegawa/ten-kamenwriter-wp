@@ -1,0 +1,76 @@
+@use '../settings' as setting;
+.c-link {
+  display: block;
+  font-weight: setting.fontweight(b);
+  &\:nav,
+  &\:cat {
+    &:hover,
+    &:focus {
+      background: var(--c-overlay);
+      opacity: 1;
+    }
+  }
+  &\:cat {
+    font-size: setting.fontsize(m);
+    font-weight: setting.fontweight(m);
+    padding: setting.spaces(xs) setting.spaces(2xs);
+  }
+  &\:nav {
+    padding: setting.spaces(base);
+    font-size: setting.fontsize(m);
+  }
+  &\:fnav,
+  &\:bottom-link {
+    color: inherit;
+  }
+  &\:bottom-link {
+    width: setting.fontsize(l);
+    & > svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &\:sns {
+    font-size: setting.fontsize(m);
+  }
+  &\:tag {
+    font-weight: setting.fontweight(m);
+    display: inline-flex;
+    &:before {
+      content: '#';
+      margin-right: setting.spaces(2xs);
+    }
+  }
+  &\:catSingle {
+    color: inherit;
+  }
+  &\:mapHead {
+    font-size: setting.fontsize(m);
+    margin-bottom: setting.spaces(base);
+  }
+  &\:mapChild {
+    font-weight: setting.fontweight(m);
+    padding: setting.spaces(2xs) 0;
+  }
+  &\:breadcrumb {
+    display: inline-block;
+    padding: setting.spaces(xs);
+    font-size: setting.fontsize(xs);
+    font-weight: setting.fontweight(b);
+  }
+  &\:inline {
+    display: inline-block;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  &\:bottomCat {
+    margin-top: setting.spaces(base);
+    font-size: setting.fontsize(s);
+    display: inline-flex;
+    align-items: baseline;
+    gap: setting.spaces(3xs);
+  }
+}

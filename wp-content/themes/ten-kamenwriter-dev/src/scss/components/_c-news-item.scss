@@ -1,0 +1,11 @@
+@use '../settings' as setting;
+.c-news-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: setting.spaces(xs);
+  align-items: flex-start;
+  > * + * {
+    flex-grow: 1;
+    flex-basis: calc((540px - 100vw) * 999);
+  }
+}

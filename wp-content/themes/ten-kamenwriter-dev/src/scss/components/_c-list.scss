@@ -1,0 +1,38 @@
+@use '../settings' as setting;
+.c-list {
+  list-style-position: outside;
+  padding-left: setting.spaces(m);
+  list-style-type: disc;
+  &__item {
+  }
+  &\:inner {
+    margin-bottom: setting.spaces(m);
+  }
+  &\:redume {
+    visibility: hidden;
+    pointer-events: none;
+    height: 0;
+    opacity: 0;
+    transition: height setting.animes(duration) setting.animes(timing);
+  }
+  &\:redume-is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    height: auto;
+    padding-bottom: setting.spaces(base);
+  }
+}
+.c-values {
+  &__title {
+    font-size: clamp(setting.fontsize(m), calc((100vw - 650px) * 999), setting.fontsize(l));
+    font-weight: setting.fontweight(b);
+    line-height: setting.lineheight(heading);
+    text-align: center;
+  }
+  &__content {
+    font-size: setting.fontsize(m);
+    font-weight: setting.fontweight(m);
+    text-align: center;
+  }
+}

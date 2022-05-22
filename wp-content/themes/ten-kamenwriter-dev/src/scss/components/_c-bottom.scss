@@ -1,0 +1,16 @@
+@use '../settings' as setting;
+.c-bottom {
+  background: var(--c-overlay);
+  color: var(--c-dimmed);
+  padding: setting.spaces(m) setting.spaces(base) calc(env(safe-area-inset-bottom) + setting.spaces(m));
+  &\:sidebar {
+    font-size: setting.fontsize(xs);
+    margin-top: auto;
+    margin-right: calc(setting.spaces(base) * -1);
+  }
+  &__text {
+    font-size: setting.fontsize(xs);
+    line-height: setting.lineheight(heading);
+    font-weight: setting.fontweight(m);
+  }
+}

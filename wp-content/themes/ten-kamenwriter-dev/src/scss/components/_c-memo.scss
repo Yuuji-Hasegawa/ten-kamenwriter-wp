@@ -1,0 +1,6 @@
+@use '../settings' as setting;
+.c-memo {
+  display: block;
+  font-size: setting.fontsize(xs);
+  color: var(--c-dimmed);
+}

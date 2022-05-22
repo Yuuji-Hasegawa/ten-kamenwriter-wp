@@ -1,0 +1,11 @@
+@use '../settings' as setting;
+.o-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &\:sidebar {
+    padding-right: 1rem;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+}

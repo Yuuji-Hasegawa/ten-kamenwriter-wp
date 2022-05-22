@@ -1,0 +1,5 @@
+@use '../settings' as setting;
+.c-time {
+  font-weight: setting.fontweight(b);
+  letter-spacing: -0.05ch;
+}

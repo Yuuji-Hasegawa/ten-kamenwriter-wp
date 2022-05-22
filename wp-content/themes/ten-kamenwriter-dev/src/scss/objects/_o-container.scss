@@ -1,0 +1,17 @@
+@use '../settings' as setting;
+.o-container {
+  box-sizing: content-box;
+  padding: 0 setting.spaces(base);
+  margin-left: auto;
+  margin-right: auto;
+  &\:header {
+    padding: 3px clamp(setting.spaces(2xs), calc(3.5vw - setting.spaces(base)), setting.spaces(base));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &\:main {
+    max-width: 70em;
+    margin-bottom: setting.spaces(l);
+  }
+}

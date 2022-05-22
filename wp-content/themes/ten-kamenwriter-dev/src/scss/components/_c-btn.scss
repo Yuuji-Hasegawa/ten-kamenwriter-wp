@@ -1,0 +1,45 @@
+@use '../settings' as setting;
+.c-btn {
+  background: var(--c-btnBg);
+  display: table;
+  padding: setting.spaces(xs) setting.spaces(s);
+  font-weight: setting.fontweight(b);
+  font-size: setting.fontsize(m);
+  appearance: none;
+  border: solid 1px transparent;
+  cursor: pointer;
+  outline: none;
+  color: var(--c-txt);
+  &:hover,
+  &:focus {
+    background: setting.brandcolor(dark);
+    color: setting.brandcolor(light);
+  }
+  &\:newsList {
+    margin: setting.spaces(base) 0 0 auto;
+  }
+  &\:topicList {
+    margin: 0 auto calc(setting.spaces(base) * 3);
+  }
+  &\:submit {
+    padding-left: setting.spaces(m);
+    padding-right: setting.spaces(m);
+    transition: all setting.animes(duration) setting.animes(timing);
+    background: setting.brandcolor(base);
+    color: #fff;
+    margin-bottom: setting.spaces(base);
+    &:disabled {
+      pointer-events: none;
+      background: var(--c-overlay);
+      color: var(--c-dimmed);
+    }
+  }
+  &\:gohome {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: setting.spaces(m);
+  }
+  &\:copy {
+    flex-shrink: 0;
+  }
+}
