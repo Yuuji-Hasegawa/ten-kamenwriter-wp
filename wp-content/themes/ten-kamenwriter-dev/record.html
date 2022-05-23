@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | これまでの記録</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,21 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> これまでの記録 </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +161,74 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">これまでの記録</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
+      <!-- page-body -->
+      <article class="c-entry">
+        <dl class="c-table">
+          <dt class="c-table__title">
+            <b>Web関係</b>
+          </dt>
+          <dd class="c-table__content">
+            <ul class="c-list">
+              <li>CMSカスタマイズ、HTML/CSSコーディング 55件</li>
+              <li>サイト企画、内部SEOなど一式 39件</li>
+              <li>フロントエンドエンジニアとして客先常駐 約2,500時間</li>
+            </ul>
+          </dd>
+          <dt class="c-table__title">
+            <b>コンサルティング関係</b>
+          </dt>
+          <dd class="c-table__content">
+            <ul class="c-list">
+              <li>ブランディングサポート 6件</li>
+              <li>チームビルディング、事業化サポート 3件</li>
+              <li>コンテンツマーケティングの企業研修 計26時間</li>
+            </ul>
+          </dd>
+          <dt class="c-table__title">
+            <b>文書、コンテンツ関係</b>
+          </dt>
+          <dd class="c-table__content">
+            <ul class="c-list">
+              <li>ライティング、SNS広報など 8件</li>
+              <li>動画作成（企画構成、撮影、編集まで） 6件</li>
+            </ul>
+          </dd>
+          <dt class="c-table__title">
+            <b>趣味・ライフワーク関係</b>
+          </dt>
+          <dd class="c-table__content">
+            <ul class="c-list">
+              <li>小説の執筆 佳作選出 10回ほど</li>
+              <li>演劇脚本、自主制作映画脚本 1本ずつ</li>
+              <li>動画企画の作成 3本、自主制作映画 1本</li>
+            </ul>
+          </dd>
+        </dl>
+        <h2 id="#deal" class="c-min-heading">取引実績</h2>
+        <ul class="c-list">
+          <li>株式会社スターフォーム</li>
+          <li>株式会社シティライフNEW</li>
+          <li>株式会社MK翻訳事務所</li>
+          <li>テクノウィーヴ株式会社</li>
+          <li>株式会社ミリオネア</li>
+          <li>学校法人大阪電気通信大学</li>
+          <li>株式会社TAM</li>
+          <li>TAMSAN Pte Ltd</li>
+          <li>株式会社ミスキィ</li>
+          <li>株式会社宣成社</li>
+          <li>株式会社音動</li>
+          <li>ユナイトサービス株式会社</li>
+          <li>株式会社デジタルインフォメーションテクノロジー</li>
+          <li>RIコンサルティング株式会社</li>
+          <li>その他、個人のお客様 約10名など。非公開の実績もあります。</li>
         </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+      </article>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">

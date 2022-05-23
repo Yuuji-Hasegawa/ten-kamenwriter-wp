@@ -1,6 +1,6 @@
 export const favicon = () => {
   let mql = window.matchMedia('(prefers-color-scheme: dark)');
-  let favicon = mql.matches ? './favicon-d.ico' : './favicon.ico';
+  let favicon = mql.matches ? 'favicon-d.ico' : 'favicon.ico';
   function setFavicon(elem) {
     let headMeta = document.head.children;
     for (let i = 0; i < headMeta.length; i++) {
@@ -13,7 +13,7 @@ export const favicon = () => {
   }
   setFavicon(favicon);
   mql.addEventListener('change', (e) => {
-    let favicon = mql.matches ? './favicon-d.ico' : './favicon.ico';
+    let favicon = mql.matches ? 'favicon-d.ico' : 'favicon.ico';
     setFavicon(favicon);
   });
 };

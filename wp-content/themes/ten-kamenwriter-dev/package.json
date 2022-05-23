@@ -16,7 +16,7 @@
     "dev:bs": "browser-sync start --config bs-config.js",
     "clean:css": "rimraf css",
     "clean:js": "rimraf js",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{html,mjs,js,jsx,ts,tsx,json,css,scss}'"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +26,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.10",
     "css-declaration-sorter": "^6.2.2",

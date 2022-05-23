@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | サンプル記事</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,24 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb"> トピック一覧 </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> サンプル記事 </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +164,136 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">サンプル記事</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-        </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
+      <!-- page-body -->
+      <article class="c-entry c-entry:single">
+        <header class="o-grid o-grid:headAuthor">
+          <a href="#authorInfo">
+            <picture class="o-frame o-frame:square">
+              <source data-srcset="img/profile.avif" type="image/avif" />
+              <source data-srcset="img/profile.webp" type="image/webp" />
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
+                data-src="img/profile.png"
+                alt="ユーザー名 プロフィール画像"
               />
             </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
           </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
+          <div class="o-stack o-stack:xxs">
+            <a class="c-link" href="#authorInfo"> 長谷川　雄治 </a>
+            <div class="o-cluster">
+              <time class="o-has-icon o-has-icon:time" datetime="2022-00-00">
+                <i class="far fa-clock"></i>
+                2022.00.00
+              </time>
+              <time class="o-has-icon o-has-icon:time" datetime="2022-00-00">
+                <i class="fas fa-arrow-rotate-right"></i>
+                2022.00.00
+              </time>
+            </div>
+          </div>
+        </header>
+        <div class="c-insert-img">
+          <picture class="o-frame">
+            <source data-srcset="img/thumb.avif" type="image/avif" />
+            <source data-srcset="img/thumb.webp" type="image/webp" />
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="img/thumb.png"
+              alt="記事タイトル"
+            />
+          </picture>
+        </div>
+        <div>
+          <div class="o-box o-box:redume">
+            <button id="redumeBtn" class="o-has-icon o-has-icon:redume" type="button">
+              <i class="fas fa-list"></i>
+              目次
+              <span class="c-redume-marker">
+                <i class="fas fa-caret-down"></i>
+              </span>
+            </button>
+            <ul id="redumeBody" class="c-list c-list:redume">
+              <li>
+                <a class="c-link" href="#"> リンク </a>
+              </li>
+              <li>
+                <a class="c-link" href="#"> リンク </a>
+              </li>
+              <li>
+                <a class="c-link" href="#"> リンク </a>
+              </li>
+              <li>
+                <a class="c-link" href="#"> リンク </a>
+              </li>
+            </ul>
+          </div>
+          ダミー本文
+        </div>
+        <div class="o-stack o-stack:xxs">
+          <a href="#" class="c-link:bottomCat">
+            <i class="fas fa-folder-open"></i>
+            ダミーカテゴリー
           </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+          <div class="o-cluster">
+            <a href="#" class="c-link c-link:tag"> ダミータグ </a>
+            <a href="#" class="c-link c-link:tag"> ダミータグ </a>
+            <a href="#" class="c-link c-link:tag"> ダミータグ </a>
+            <a href="#" class="c-link c-link:tag"> ダミータグ </a>
+            <a href="#" class="c-link c-link:tag"> ダミータグ </a>
+          </div>
+        </div>
+        <div class="c-input-copy">
+          <input
+            id="shareURL"
+            class="c-input c-input:share"
+            type="text"
+            value="この記事のURLこの記事のURLこの記事のURLこの記事のURL"
+            readonly="true"
+          />
+          <button id="shareBtn" class="c-btn c-btn:copy">コピー</button>
+        </div>
+        <footer id="authorInfo" class="o-box o-box:bottom-author">
+          <div class="o-switcher o-switcher:author">
+            <div class="c-author-pict">
+              <picture class="o-frame o-frame:square">
+                <source data-srcset="img/profile.avif" type="image/avif" />
+                <source data-srcset="img/profile.webp" type="image/webp" />
+                <img
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="img/profile.png"
+                  alt="ユーザー名 プロフィール画像"
+                />
+              </picture>
+            </div>
+            <dl class="o-stack o-stack:xs">
+              <dt class="c-author-name">長谷川　雄治</dt>
+              <dd>
+                自己紹介
+                <div class="o-cluster o-cluster:sns">
+                  <a href="#" class="c-link c-link:sns" target="_blank" rel="noopener">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="c-link c-link:sns" target="_blank" rel="noopener">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="c-link c-link:sns" target="_blank" rel="noopener">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" class="c-link c-link:sns" target="_blank" rel="noopener">
+                    <i class="far fa-file"></i>
+                  </a>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </footer>
+      </article>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">

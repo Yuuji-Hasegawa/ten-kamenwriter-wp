@@ -1,6 +1,6 @@
-import sharp from "sharp";
-import path from "path";
-import fs from "fs";
+import sharp from 'sharp';
+import path from 'path';
+import fs from 'fs';
 
 const regex = /\.(png|jpe?g)$/i;
 const getData = (dirPath) => {
@@ -11,7 +11,7 @@ const getData = (dirPath) => {
 };
 const getAllData = (dirPath) => {
   let result = [];
-  const getData = ((dirPath) => {
+  const getData = (dirPath) => {
     let items = fs.readdirSync(dirPath);
     items = items.map((itemName) => {
       return path.join(dirPath, itemName);
@@ -22,22 +22,20 @@ const getAllData = (dirPath) => {
         getData(itemPath);
       }
     });
-  });
+  };
   getData(dirPath);
   return result;
 };
 
-const fileList = getAllData("./img").filter((file) => regex.test(file));
+const fileList = getAllData('./img').filter((file) => regex.test(file));
 (async () => {
-  await Promise.all(fileList.map(async (item) => {
-    const paths = path.parse(item);
-    const dir = paths.dir;
-    const filename = paths.name;
-    await sharp(item)
-      .webp({ quality: 90 })
-      .toFile(`${dir}/${filename}.webp`)
-    await sharp(item)
-      .avif()
-      .toFile(`${dir}/${filename}.avif`)
-  }))
+  await Promise.all(
+    fileList.map(async (item) => {
+      const paths = path.parse(item);
+      const dir = paths.dir;
+      const filename = paths.name;
+      await sharp(item).webp({ quality: 90 }).toFile(`${dir}/${filename}.webp`);
+      await sharp(item).avif().toFile(`${dir}/${filename}.avif`);
+    }),
+  );
 })();

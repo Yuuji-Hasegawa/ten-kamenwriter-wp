@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | 初めての方へ</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,21 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> 初めての方へ </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +161,103 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">初めての方へ</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-        </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+      <!-- page-body -->
+      <h2 class="c-heading c-heading:textCenter u-mb-l">仮面ライターは、大阪が拠点のWeb屋です</h2>
+      <p class="c-tagline">技術寄りのフリーランスとして、十年近くやってきました</p>
+      <article class="c-entry">
+        <p>
+          デザイン的なセンスをウリにせず、技術力の高さや営業力を誇ることもなく、太い取引先や再現性の高いノウハウやデータを持つこともなく。
+          <br />
+          ただただ、若くて無理を効かせやすそうなフリーランスとして、早9年。
+          <br />
+          「仮面ライター」以前も含めれば、十年を超えて活動しています。
+        </p>
+        <p>
+          分かりやすい強みや、それを裏打ちするデータ、目を引く実績も特にないまま、主に大阪周辺の零細企業やスタートアップ界隈、クリエイティブの制作現場を眺めてきました。
+          <br />
+          伸びていったビジネスや無茶苦茶な要望への対応、上手く回らなくなる組織なども下積みとして経験し、自らも自営業者として、専門家との交流や座学も積み重ねてきました。
+        </p>
+        <p>
+          自他を通じて得られた様々な経験や知見を活かしたより良い提案、無理のない生き残り方を日々模索しています。
+          <br />
+          <b class="u-text-accent">HPを通じてできそうなこと</b>、
+          <b class="u-text-accent">ビジネスを少しでも長持ちさせる伝え方</b>など、同じ目線で一緒に考えましょう。
+        </p>
+      </article>
+      <h3 class="c-min-heading">主要な業務</h3>
+      <div class="o-switcher o-switcher:oneThird u-mb-l">
+        <dl class="o-stack o-stack:feature">
+          <dt class="o-stack o-stack:featureTitle">
+            <i class="fas fa-code fa-3x"></i>
+            <b>Webサイト制作</b>
+          </dt>
+          <dd class="c-feature-content">
+            <p>
+              デザインデータなどを元に、HTML/CSSへコーディングする作業や、WordPress等のCMSテーマに作り替える下流工程のみから、サイト設計やワイヤーフレームから策定する丸ごと一式まで対応します。
+            </p>
+            <p>ドメインの取得やサーバの運用代行、メールアカウント発行もお任せください。</p>
+            <p>ショッピングカートや通販サイトの改修、WordPressテーマの加工なども対応可能です。お気軽にご相談ください</p>
+          </dd>
+        </dl>
+        <dl class="o-stack o-stack:feature">
+          <dt class="o-stack o-stack:featureTitle">
+            <i class="fas fa-chart-line fa-3x"></i>
+            <b>コンサルティング</b>
+          </dt>
+          <dd class="c-feature-content">
+            <p>
+              アクセス解析のデータを元にして改善箇所をご提案したり、公開サイトのソースコードを確認して改修項目をピックアップするなど、Webサイトを起点にしたコンサルティングをご提供しています。
+            </p>
+            <p>
+              ビジネスの現場、あるいは経営者の観点から最適なWeb活用をご提案したり、ペルソナの策定やコンテンツマーケティングの施策を具申するなど、マーケティング関連、PR関連のコンサルティングも行なっています。
+            </p>
+          </dd>
+        </dl>
+        <dl class="o-stack o-stack:feature">
+          <dt class="o-stack o-stack:featureTitle">
+            <i class="far fa-file fa-3x"></i>
+            <b>文書作成</b>
+          </dt>
+          <dd class="c-feature-content">
+            <p>
+              ヒアリングやメモ書きを元にした文書作成、Webサイトやブログ用の原稿作成、あるいは原稿の添削、校正を行います。
+            </p>
+            <p>
+              「何をどう伝えるか」が分からない方へ向けた構成のご提案や、コンテンツ作成における考え方の指導、研修等も実施可能です。
+            </p>
+            <p>
+              効果的な情報発信、魅力的なイメージづくりを目的としたブログやSNSの運用代行も経験アリ。文書や文章以外のコンテンツ制作も、お気軽にお声かけください。
+            </p>
+          </dd>
+        </dl>
+      </div>
+      <h3 class="c-heading c-heading:textCenter u-mb-l">10年目の基本方針</h3>
+      <div class="c-entry o-stack o-stack:m">
+        <dl class="o-stack o-stack:xxs">
+          <dt class="c-policy-title">1.基本を大事に</dt>
+          <dd>
+            守るべきこと、押さえるべきことを徹底する。表面的な派手さや目先の利益に囚われず、地味でつまらない長期施策、本質を捉えた取り組みを選ぶこと
+          </dd>
+        </dl>
+        <dl class="o-stack o-stack:xxs">
+          <dt class="c-policy-title">2.専門家としてブレない</dt>
+          <dd>
+            相手が望まないことでも、必要であれば躊躇わずに実行する。やるべきと思ったことは全力で。遠慮も手加減もしない
+          </dd>
+        </dl>
+        <dl class="o-stack o-stack:xxs">
+          <dt class="c-policy-title">3.柔軟に楽しむ</dt>
+          <dd>
+            「こうあるべき」と思い込まない。知らない世界も新しい出会いも積極的に取り入れる。肩も頭も柔らかくして面白がること
+          </dd>
+        </dl>
+      </div>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">

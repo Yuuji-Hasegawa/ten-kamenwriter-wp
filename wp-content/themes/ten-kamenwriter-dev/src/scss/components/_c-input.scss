@@ -13,6 +13,20 @@
 .c-input-copy {
   display: flex;
   margin: setting.spaces(m) 0;
+  position: relative;
+}
+.c-copy-message {
+  display: table;
+  position: absolute;
+  background: setting.brandcolor(base);
+  text-align: center;
+  padding: setting.spaces(xs) setting.spaces(xxs);
+  font-weight: setting.fontweight(m);
+  font-size: setting.fontsize(xs);
+  top: calc(100% + setting.spaces(s));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 .c-checkbtn {
   width: setting.fontsize(s);

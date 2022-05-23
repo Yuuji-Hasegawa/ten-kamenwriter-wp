@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | プロフィール</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,21 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> プロフィール </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +161,51 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">プロフィール</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-        </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
+      <!-- page-body -->
+      <article class="c-entry">
+        <div class="o-switcher o-switcher:media">
+          <div class="c-media-pict">
+            <picture class="o-frame o-frame:square">
+              <source data-srcset="img/profile.avif" type="image/avif" />
+              <source data-srcset="img/profile.webp" type="image/webp" />
               <img
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
+                data-src="img/profile.png"
+                alt="プロフィール"
               />
             </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+          </div>
+          <div class="c-media-body">
+            <dl class="o-stack o-stack:xxs">
+              <dt class="u-text-large">
+                <b>長谷川　雄治</b>
+              </dt>
+              <dd>
+                <p>
+                  昭和63年生まれ。大阪電気通信大学総合情報学部デジタルゲーム学科卒業。
+                  <br />
+                  十代からゲームシナリオライターを目指して執筆活動や、エンターテインメント作品の制作、プロデュースを学ぶも、就活は失敗に終わり夢破れる。
+                </p>
+                <p>
+                  データ加工のアルバイト、Web制作のインターンを経て、2013年から「屋号：仮面ライター」として開業後、現在に至る。
+                </p>
+                <p>
+                  姉妹を持つ真ん中っ子かつ転勤族という境遇から、周囲とのコミュニケーション、関係構築に興味を持ち、技術としてのコミュニケーションに強い関心を抱く。
+                </p>
+                <p>
+                  アマチュアの物書きとして、言語や人間社会、記号論を理系、文系の両方の立場から考えることも最近の趣味。
+                </p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">

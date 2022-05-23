@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | ページが見つかりません</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,21 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> ページが見つかりません </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +161,39 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">ページが見つかりません</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
+      <!-- page-body -->
+      <div class="c-entry">
+        <p>
+          お探しのページは見つかりませんでした。
+          <br />
+          お探しのページは、
+        </p>
+        <ul class="c-list c-list:inner">
+          <li>すでに削除されている</li>
+          <li>公開期間が終わっている</li>
+          <li>アクセスしたアドレスが異なっている</li>
         </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+        <p>
+          などの理由で見つかりませんでした。
+          <br />
+          引き続き、このサイトをご利用いただく場合は、
+        </p>
+        <ul class="c-list c-list:inner">
+          <li>
+            <a class="c-link c-link:inline" href="#"> トップページ </a>
+            から探す
+          </li>
+          <li>検索し直す</li>
+        </ul>
+        <p>など、ご利用ください。</p>
+        <a class="c-btn c-btn:gohome" href="#"> トップページへ戻る </a>
+      </div>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">

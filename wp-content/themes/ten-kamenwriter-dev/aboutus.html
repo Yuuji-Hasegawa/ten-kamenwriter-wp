@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="#" />
     <meta name="twitter:image" content="#" />
     <meta name="twitter:creator" content="#" />
-    <title>Document</title>
+    <title>Document | 仮面ライターとは？</title>
     <link rel="icon" href="./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180×180" href="./icons/icon-180x180.png" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -132,7 +132,21 @@
     </div>
     <div class="c-sidebar-bg"></div>
     <!-- // sidebar -->
-    <!-- hero(front only) -->
+    <!-- breadcrumb -->
+    <nav class="c-bread-list__outer" aria-label="Breadcrumb">
+      <ol class="c-bread-list">
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li class="c-bread-list__item">
+          <a href="#" class="c-link c-link:breadcrumb" aria-current="page"> 仮面ライターとは？ </a>
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb -->
+    <!-- page-heading -->
     <div class="c-hero">
       <div class="c-hero_bg">
         <picture class="o-frame o-frame:logo">
@@ -147,111 +161,87 @@
         </picture>
       </div>
       <div class="c-hero_front">
-        <h1 class="c-hero_main">仮面ライター</h1>
-        <p class="c-hero_tagline">since 2013</p>
+        <h1 class="c-hero_main c-hero_main:page">仮面ライターとは？</h1>
       </div>
     </div>
-    <!-- // hero(front only) -->
+    <!-- // page-heading -->
     <main class="o-container o-container:main">
-      <!-- front-body -->
-      <!-- news -->
-      <aside class="o-box o-box:news">
-        <h2 class="c-heading">Infomation</h2>
-        <ul class="o-stack o-stack:newsList">
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-          <li class="c-news-item">
-            <time class="c-time" datetime="2022-00-00"> 2022.00.00 </time>
-            <a href="#" class="c-link"> ニュースタイトル </a>
-          </li>
-        </ul>
-        <a href="#" class="c-btn c-btn:newsList"> 全てのニュースはこちら </a>
-      </aside>
-      <!-- // news -->
-      <!-- blog -->
-      <h2 class="c-heading">Topics</h2>
-      <ul class="o-grid o-grid:blogList">
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-        <li>
-          <a href="#">
-            <picture class="o-frame">
-              <source data-srcset="img/thumb.avif" type="image/avif" />
-              <source data-srcset="img/thumb.webp" type="image/webp" />
-              <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                data-src="img/thumb.png"
-                alt="コンテンツタイトル"
-              />
-            </picture>
-            <span class="c-topic-title">コンテンツタイトル</span>
-          </a>
-          <span>
-            <span class="o-has-icon o-has-icon:cat">
-              <i class="fas fa-folder-open"></i>
-              <a href="#" class="c-link c-link:catSingle"> カテゴリー </a>
-            </span>
-            <span class="c-memo"> 読了見込 3分・<time datetime="2022-00-00">3日前</time> </span>
-          </span>
-        </li>
-      </ul>
-      <a href="#" class="c-btn c-btn:topicList"> Topics 一覧 </a>
-      <!-- // blog -->
-      <!-- // front-body -->
+      <!-- page-body -->
+      <div class="o-switcher o-switcher:media">
+        <div class="c-media-pict">
+          <picture class="o-frame o-frame:logo">
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="img/logo.svg"
+              width="100%"
+              height="100%"
+              decoding="async"
+              alt="ロゴ"
+            />
+          </picture>
+        </div>
+        <div class="c-media-body">
+          <h2 class="c-min-heading c-min-heading:first">スペック</h2>
+          <p>
+            ■身長：174cm
+            <br />
+            ■体重：No Data
+            <br />
+            ■主要な言語など：HTML/CSS,Javascript,PHP,WordPress
+            <br />
+            コーディングは常人よりやや早く、作業中の判断力、集中力にも優れている。空気の読めなさやノリの悪さに定評アリ。
+            <br />
+            必殺技は、歯に絹着せぬ物言いで放つ「ライダーキック」など
+          </p>
+          <h2 class="c-min-heading">これまでの主な仕事</h2>
+          <ul class="o-switcher o-switcher:oneThird u-mb-m">
+            <li class="o-stack o-stack:aboutus">
+              <i class="fas fa-code fa-3x"></i>
+              <b>Webサイト制作</b>
+            </li>
+            <li class="o-stack o-stack:aboutus">
+              <i class="fas fa-chart-line fa-3x"></i>
+              <b>コンサルティング</b>
+            </li>
+            <li class="o-stack o-stack:aboutus">
+              <i class="far fa-file fa-3x"></i>
+              <b>文書作成</b>
+            </li>
+          </ul>
+          <dl class="c-table u-mb-s">
+            <dt class="c-table__title">Webサイト制作</dt>
+            <dd class="c-table__content">
+              <ul class="c-list">
+                <li>デザインデータや原稿を元にしたコーディングのみ</li>
+                <li>全体設計、内容の提案からサイト公開まで一式</li>
+                <li>HTMLデータのWordPress化、カートのカスタマイズなど</li>
+              </ul>
+            </dd>
+            <dt class="c-table__title">コンサルティング</dt>
+            <dd class="c-table__content">
+              <ul class="c-list">
+                <li>アクセス解析や実際のコードを元にしたサイト改善</li>
+                <li>マーケティング施策の提案、ならびにサイトの改修</li>
+                <li>情報設計、コンテンツマーケティングの提案など</li>
+              </ul>
+            </dd>
+            <dt class="c-table__title">文書作成</dt>
+            <dd class="c-table__content">
+              <ul class="c-list">
+                <li>原稿を元にした加筆修正、校正</li>
+                <li>会社案内の作成、文書添削、構成提案</li>
+                <li>インタビューを元にしたブログ記事作成など</li>
+              </ul>
+            </dd>
+          </dl>
+          <p>
+            上記以外にも、SNSの運用代行や自営業経験をもとにした提案、規約の作成や事務作業のサポートなども行なっています。
+            <br />
+            <b>「エンジニア×物書き×自営業」</b>でできそうなことがあれば、お声かけください。
+          </p>
+        </div>
+      </div>
+      <!-- // page-body -->
     </main>
     <!-- footer -->
     <div class="c-bottom">
