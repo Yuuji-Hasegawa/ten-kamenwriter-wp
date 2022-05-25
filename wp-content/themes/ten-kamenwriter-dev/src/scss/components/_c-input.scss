@@ -20,9 +20,8 @@
   position: absolute;
   background: setting.brandcolor(base);
   text-align: center;
-  padding: setting.spaces(xs) setting.spaces(xxs);
+  padding: setting.spaces(xs);
   font-weight: setting.fontweight(m);
-  font-size: setting.fontsize(xs);
   top: calc(100% + setting.spaces(s));
   left: 50%;
   transform: translateX(-50%);

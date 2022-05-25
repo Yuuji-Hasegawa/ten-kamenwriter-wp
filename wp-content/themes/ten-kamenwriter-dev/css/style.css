@@ -328,6 +328,13 @@ a:hover, a:focus {
 .o-stack\:values > * + * {
   margin-top: 1.5rem;
 }
+.o-stack\:siteList {
+  font-size: 1.125rem;
+  margin-bottom: 2.427rem;
+}
+.o-stack\:siteList > * + * {
+  margin-top: 1.5rem;
+}
 
 .o-grid {
   display: grid;
@@ -1005,6 +1012,11 @@ body.fixed {
   text-align: center;
 }
 
+.c-site__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
 .c-table {
   display: flex;
   flex-wrap: wrap;
@@ -1075,7 +1087,6 @@ body.fixed {
   text-align: center;
   padding: 0.5729730886rem;
   font-weight: 500;
-  font-size: 0.875rem;
   top: calc(100% + 0.9270704574rem);
   left: 50%;
   transform: translateX(-50%);

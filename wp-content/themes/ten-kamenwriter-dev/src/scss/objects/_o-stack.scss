@@ -77,4 +77,11 @@
       margin-top: setting.spaces(m);
     }
   }
+  &\:siteList {
+    font-size: setting.fontsize(m);
+    margin-bottom: setting.spaces(l);
+    & > * + * {
+      margin-top: setting.spaces(m);
+    }
+  }
 }

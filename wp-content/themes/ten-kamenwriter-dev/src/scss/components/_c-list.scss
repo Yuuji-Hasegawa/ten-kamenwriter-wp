@@ -36,3 +36,13 @@
     text-align: center;
   }
 }
+.c-site {
+  &__title {
+    font-size: setting.fontsize(l);
+    font-weight: setting.fontweight(b);
+    line-height: setting.lineheight(heading);
+  }
+  &__content {
+
+  }
+}
