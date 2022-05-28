@@ -36,6 +36,14 @@ function my_script_styles()
     }
 }
 add_action('wp_enqueue_scripts', 'my_script_styles');
+function recatcha_hidden()
+{
+    if (is_page('inquiry')) {
+        return;
+    }
+    wp_deregister_script('google-recaptcha');
+}
+add_action('wp_enqueue_scripts', 'recatcha_hidden', 100, 0);
 
 add_filter('script_loader_tag', 'add_async', 10, 2);
 function add_async($tag, $handle)

@@ -204,7 +204,7 @@ function my_ogp()
     $ogp .= '<meta property="article:publisher" content="' . get_vars('sns', 'fb') . '">';
     $ogp .= '<meta property="og:description" content="' . my_description() . '">';
     $ogp .= '<meta property="og:type" content="' . get_ogp_type() . '">';
-    $ogp .= '<meta property="og:title" content="'. get_template_directory_uri() . '/ogp.png">';
+    $ogp .= '<meta property="og:title" content="'. $ogp_title . '">';
     $ogp .= '<meta property="og:url" content="' . $ogp_url . '">';
     $ogp .= '<meta property="og:site_name" content="' . get_vars('basic', 'name') . '">';
     $ogp .= '<meta property="og:image" content="'. get_template_directory_uri() . '/ogp.png">';

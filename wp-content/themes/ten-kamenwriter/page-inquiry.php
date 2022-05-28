@@ -2,7 +2,8 @@
 <article class="c-entry">
   <p>仮面ライターにご質問、ご要望などございましたら、下記のお問い合わせフォームから、お気軽にお寄せください。</p>
   <h2 class="c-min-heading">お問い合わせフォーム</h2>
-  <?php echo do_shortcode('[contact-form-7 id="135" title="Contact form 1"]');?>
+  <?php echo do_shortcode('[contact-form-7 id="5" title="お問い合わせフォーム"]');?>
+  <!--<?php echo do_shortcode('[contact-form-7 id="135" title="Contact form 1"]');?>-->
   <ul class="o-stack o-stack:annouce">
     <li>調査等のため、返信にお時間を頂くことがございます。予めご了承ください。</li>
     <li>
