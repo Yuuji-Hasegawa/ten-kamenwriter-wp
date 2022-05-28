@@ -14,25 +14,7 @@
     </div>
   </header>
   <div class="o-cover o-cover:sidebar">
-    <div class="o-box o-box:sidebar">
-      <h2 class="c-heading c-heading:sidebar">カテゴリー</h2>
-      <div class="o-stack">
-        <a class="c-link c-link:cat">ダミーテキスト</a>
-        <a class="c-link c-link:cat">ダミーテキスト</a>
-        <a class="c-link c-link:cat">ダミーテキスト</a>
-        <a class="c-link c-link:cat">ダミーテキスト</a>
-        <a class="c-link c-link:cat">ダミーテキスト</a>
-      </div>
-    </div>
-    <div class="o-box o-box:sidebar">
-      <h2 class="c-heading c-heading:sidebar">タグ</h2>
-      <div class="o-cluster">
-        <a href="#" class="c-link c-link:tag"> ダミータグ </a>
-        <a href="#" class="c-link c-link:tag"> ダミータグ </a>
-        <a href="#" class="c-link c-link:tag"> ダミータグ </a>
-        <a href="#" class="c-link c-link:tag"> ダミータグ </a>
-      </div>
-    </div>
+    <?php echo get_cat_list(); echo get_tag_list();?>
     <nav class="o-stack o-stack:nav">
       <a href="<?php echo home_url('/intro/');?>"
         class="c-link c-link:nav"> イントロダクション </a>
@@ -47,7 +29,7 @@
         <a href="https://shin-kamenwriter.com" class="c-link c-link:cat" target="_blank" rel="noopener">シン・仮面ライター</a>
         <a href="https://bbns.jp" class="c-link c-link:cat" target="_blank" rel="noopener">Blue B Nose</a>
         <a href="https://magazine.kamenwriter.com" class="c-link c-link:cat" target="_blank"
-          rel="noopener">NXZ（現：ヒイラギ）</a>
+          rel="noopener">NXZ（現:ヒイラギ）</a>
       </div>
     </div>
     <footer class="c-bottom c-bottom:sidebar">

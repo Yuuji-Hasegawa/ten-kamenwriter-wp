@@ -1,0 +1,50 @@
+{
+	"basic": {
+		"name": "仮面ライター",
+		"keywords": [
+			"仮面ライター",
+			"カメンライター",
+            "かめんらいたー",
+            "かめんライター",
+            "仮面らいたー",
+            "kamenwriter",
+            "maskedwriter"
+		],
+		"postSlug": "topic",
+		"postName": "トピック"
+	},
+	"theme": {
+		"color": "#2c6c60",
+		"statusbar": "black"
+	},
+    "sns": {
+		"locale": "ja_JP",
+		"fb": "https://www.facebook.com/kamenwriter01/",
+		"tw": "https://twitter.com/kamenwriter02",
+		"instagram": "https://www.instagram.com/kamenwriter02/",
+		"youtube": "https://www.youtube.com/",
+		"twcard": "summary_large_image",
+		"twcreator": "kamenwriter01",
+		"twsite": "kamenwriter02"
+	},
+	"company": {
+		"name": "仮面ライター",
+		"owner": "長谷川 雄治",
+		"zip": "567-0005",
+		"address": "茨木市五日市2",
+		"mail": {
+			"primary": "info@kamenwriter.com",
+			"sendonly": "noreply@kamenwriter.com"
+		},
+		"birth": "2013年04月26日"
+	},
+	"term": {
+		"domain": "kamenwriter.com",
+		"servicename": "仮面ライター",
+		"ppacount": "長谷川 雄治",
+		"nouse": "6ヶ月以上",
+		"noreply": "30日間以上",
+		"payterm": "12ヶ月間",
+		"court": "大阪地方裁判所"
+	}
+}

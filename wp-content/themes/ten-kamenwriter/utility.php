@@ -39,7 +39,7 @@ function get_readtime()
     $count = $count + $excerpt;
     $count = round($count / 600);
     $output = $count . '分';
-    return $output;
+    echo $output;
 }
 
 function my_human_time_diff($from, $to = '')
@@ -98,48 +98,3 @@ function my_human_time_diff($from, $to = '')
     }
     return $since;
 }
-
-function get_cat_list()
-{
-    $output = '';
-    $categories = get_categories();
-    if ($categories) {
-        $output .= '<div class="o-box o-box:sidebar"><h2 class="c-heading c-heading:sidebar">カテゴリー</h2><div class="o-stack">';
-        foreach ($categories as $category) {
-            $output .= '<a class="c-link c-link:cat" href="'.get_category_link($category->term_id).'">'.$category->name.'</a>';
-        }
-        $output .= '</div></div>';
-    }
-    if ($output) {
-        return $output;
-    }
-}
-
-function get_tag_list()
-{
-    $output = '';
-    $tags = get_tags();
-    if ($tags) {
-        $output .= '<div class="o-box o-box:sidebar"><h2 class="c-heading c-heading:sidebar">タグ</h2><div class="o-cluster">';
-        foreach ($tags as $tag) {
-            $output .= '<a class="c-link c-link:tag" href="'. get_tag_link($tag->term_id) .'">' . $tag->name . '</a>';
-        }
-        $output .= '</div></div>';
-    }
-    if ($output) {
-        return $output;
-    }
-}
-
-function my_filter_rest_endpoints($endpoints)
-{
-    if (isset($endpoints['/wp/v2/users'])) {
-        unset($endpoints['/wp/v2/users']);
-    }
-    if (isset($endpoints['/wp/v2/users/(?P<id>[\d]+)'])) {
-        unset($endpoints['/wp/v2/users/(?P<id>[\d]+)']);
-    }
-    return $endpoints;
-}
-
-add_filter('rest_endpoints', 'my_filter_rest_endpoints', 10, 1);

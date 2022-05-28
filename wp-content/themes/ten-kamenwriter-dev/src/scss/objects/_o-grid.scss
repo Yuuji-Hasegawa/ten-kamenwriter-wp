@@ -3,7 +3,7 @@
   display: grid;
   &\:blogList {
     gap: calc(setting.spaces(base) * 3) setting.spaces(base);
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     margin-bottom: calc(setting.spaces(base) * 3);
   }
   &\:sitemap {
