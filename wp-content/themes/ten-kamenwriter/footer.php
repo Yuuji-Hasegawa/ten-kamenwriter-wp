@@ -22,8 +22,10 @@
 	    <span class="o-stack o-stack:sitemap">
 	      <a href="<?php echo home_url('/records/');?>"
 	        class="c-link c-link:mapHead"> これまでの記録 </a>
-	      <a href="#" class="c-link c-link:mapChild"> これまでの事例 </a>
-	      <a href="#" class="c-link c-link:mapChild"> 関係者の証言 </a>
+	      <a href="<?php echo home_url('/category/works/');?>"
+	        class="c-link c-link:mapChild"> これまでの事例 </a>
+	      <a href="<?php echo home_url('/category/voices/');?>"
+	        class="c-link c-link:mapChild"> 関係者の証言 </a>
 	    </span>
 	  </div>
 	  <h2 class="c-related-title">関連サイト</h2>

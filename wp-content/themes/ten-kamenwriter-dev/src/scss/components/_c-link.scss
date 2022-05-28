@@ -61,6 +61,8 @@
   &\:inline {
     display: inline-block;
     text-decoration: underline;
+    overflow-wrap: break-word;
+    word-break: break-word;
     &:hover,
     &:focus {
       text-decoration: none;
